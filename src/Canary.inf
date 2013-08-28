@@ -1,0 +1,6 @@
+name = FishyBalance
+main-class = de.nosefish.fishybalance.FishyBalance
+isLibrary = false
+author = nosefish
+version = 0.1.0
+dependencies = FishyLib
