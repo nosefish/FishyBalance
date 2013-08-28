@@ -1,5 +1,5 @@
 name = FishyBalance
-main-class = de.nosefish.fishybalance.FishyBalance
+main-class = net.gmx.nosefish.fishybalance.FishyBalance
 isLibrary = false
 author = nosefish
 version = 0.1.0
