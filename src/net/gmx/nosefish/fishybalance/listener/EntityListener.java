@@ -45,19 +45,19 @@ public class EntityListener implements PluginListener {
 		Entity attacker = damageSource.getDamageDealer();
 		if (defender != null && defender instanceof Player) {
 			if (attacker != null ) {
-				FishyBalance.logger.logDebug(attacker.getName() + " attacḱed "
-						+ defender.getName() + " dealing " + damageAmount
-						+ " damage");
+//				FishyBalance.logger.logPluginDebug(attacker.getName() + " attacḱed "
+//						+ defender.getName() + " dealing " + damageAmount
+//						+ " damage");
 				// adjust damage dealt by mobs
 				World world = attacker.getWorld();
 				String attackerClassName = attacker.getClass()
 						.getSimpleName();
-				FishyBalance.logger.logDebug("attackerClass: " + attackerClassName);
+//				FishyBalance.logger.logPluginDebug("attackerClass: " + attackerClassName);
 				try {
 					MobClass mobClass = MobClass.valueOf(attackerClassName);
 					damageAmount *= getDamageMultiplier(world, mobClass);
-					FishyBalance.logger.logDebug("Adjusted damage to " + damageAmount
-							+ " for " + mobClass);
+//					FishyBalance.logger.logPluginDebug("Adjusted damage to " + damageAmount
+//							+ " for " + mobClass);
 				} catch (IllegalArgumentException e) {
 					FishyBalance.logger
 					.logWarning("Attack by an unknown attacker! Please add "
