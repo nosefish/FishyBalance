@@ -60,7 +60,7 @@ public class EntityListener implements PluginListener {
 //							+ " for " + mobClass);
 				} catch (IllegalArgumentException e) {
 					FishyBalance.logger
-					.logWarning("Attack by an unknown attacker! Please add "
+					.warn("Attack by an unknown attacker! Please add "
 							+ attackerClassName
 							+ " to net.gmx.nosefish.fishyshield.MobClass" + " in FishyLib!");
 				}
