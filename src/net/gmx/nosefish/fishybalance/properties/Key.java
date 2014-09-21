@@ -54,10 +54,11 @@ public enum Key implements PropertyKey{
 			ValueType.DOUBLE, 0.0D);
 	
 	private static Map<String, PropertyKey> map;
-	private String propertyName;
-	private Object defaultValue;
-	private ValueType propertyType;
+	private final String propertyName;
+	private final Object defaultValue;
+	private final ValueType propertyType;
 
+    @SuppressWarnings("LeakingThisInConstructor")
 	private Key(String propertyName, ValueType type, Object defaultValue) {
 		this.propertyName = propertyName;
 		this.propertyType = type;

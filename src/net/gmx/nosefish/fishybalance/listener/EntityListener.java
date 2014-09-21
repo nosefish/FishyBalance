@@ -28,7 +28,7 @@ import net.gmx.nosefish.fishybalance.properties.Key;
  * 
  */
 public class EntityListener implements PluginListener {
-	private Properties properties;
+	private final Properties properties;
 
 	/**
 	 * Constructor
